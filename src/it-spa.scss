@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+    height : 100%;
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background : linear-gradient(45deg, #1CB5E0 0%, #199bbe 100%) no-repeat fixed;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    padding    : 2rem;
+}
+
+nav {
+    background: linear-gradient(45deg, #ffc107 0%, #f4b700 100%);
+
+    button,
+    .btn {
+        background   : transparent;
+        border       : 0;
+        border-radius: 0;
+        box-shadow   : none !important;
+        font-size    : 1rem;
+        outline      : none;
+        padding      : 0.5rem 1rem;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .btn.btn-active {
+        background-color: #f4b700;
+        text-decoration : underline;
+    }
+}
+
+main {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 2rem 0;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    ul {
+        list-style: none;
+        padding   : 0;
+
+        li {
+            background-color: #1791b3;
+            box-shadow      : #00576e 0 2px 8px 2px;
+            color           : #fff;
+            padding         : 1rem;
+
+            footer {
+                display        : flex;
+                align-items    : center;
+                justify-content: flex-end;
+
+                &>*+* {
+                    margin-left: 1rem;
+                }
+            }
+
+            button,
+            .btn {
+                background: transparent;
+                border    : 1px solid #fff;
+                color     : #fff;
+            }
+        }
+
+        li+li {
+            margin-top: 2rem;
+        }
+    }
+
+    article {
+        $bg-color-1: #fffcf2;
+        $bg-color-2: #fff6dd;
+
+        background: repeating-linear-gradient(45deg, $bg-color-1, $bg-color-1 10px, $bg-color-2 10px, $bg-color-2 20px);
+        box-shadow: #00576e 0 2px 8px 2px;
+        margin    : 2em 1em;
+        padding   : 1rem;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            background: #ddc47d;
+            color     : white;
+            margin    : 0;
+            padding   : 1rem 0.5rem;
+        }
+    }
+}
