@@ -14,8 +14,8 @@ const navItems = [
     { name: 'Treatments', component: Treatments },
     { name: 'Booking', component: Booking },
     { name: 'LogIn / SignUp', component: Registration },
-    { name: 'Contact', component: Footer },
-    { name: '🛒', component: Cart },
+    // { name: 'Contact', component: Footer },
+    { name: 'Cart 🛒', component: Cart },
 
 ];
 

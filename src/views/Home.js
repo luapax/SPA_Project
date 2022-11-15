@@ -7,3 +7,5 @@ export function Home() {
     `;
     return section;
 }
+
+//moze tutaj dodac inputy z data

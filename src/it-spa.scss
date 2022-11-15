@@ -15,21 +15,50 @@ body {
 
 }
 
+header .logo {
+    text-align: center;
+
+    img {
+        height: 7rem;
+        margin-bottom: 1rem;
+        border-radius: 80%;
+    }
+
+}
+
+
 nav {
     background-color: rgba(76, 187, 126, 0.4);
-    display: grid;
-    grid-template-columns: 15% 15% 15% 15% 15% 15% 15%;
+    display: flex;
+    flex-wrap: wrap;
+
 
 
     button,
     .btn {
+        flex-basis: 150px;
+        flex-grow: 1;
         background: transparent;
         border: 0;
         border-radius: 0;
         font-size: 1.2rem;
         padding: 1rem 0;
-        color: whitesmoke;
+        // color: whitesmoke;
 
+        @media (max-width: 992px) {
+            flex-basis: 235px;
+
+        }
+
+        @media (max-width: 768px) {
+            flex-basis: 200px;
+
+        }
+
+        @media (max-width: 576px) {
+            flex-basis: 180px;
+
+        }
 
         // &:active,
         // &:focus,
@@ -52,11 +81,7 @@ main {
     h4,
     h5,
     h6 {
-        margin: 2rem 0;
-    }
-
-    p {
-        margin: 1rem 0;
+        margin: 2rem 0 0 0;
     }
 
     ul {
@@ -124,10 +149,16 @@ section {
 }
 
 
-// @media (max-width: 600px) {
-//     nav {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//     }
-// }
+@media (max-width: 576px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        button {
+            flex-basis: 60px;
+
+        }
+
+    }
+}
