@@ -9,13 +9,13 @@ import { Footer } from '../views/Footer'
 
 // Nawigacja stworzona na podstawie poniższej tablicy
 const navItems = [
-    { name: 'Home', component: Home },
-    { name: 'Rooms', component: RoomList },
-    { name: 'Treatments', component: Treatments },
-    { name: 'Booking', component: Booking },
-    { name: 'LogIn / SignUp', component: Registration },
+    { name: 'HOME', component: Home },
+    { name: 'ROOMS', component: RoomList },
+    { name: 'TREATMENTS', component: Treatments },
+    { name: 'BOOKING', component: Booking },
+    { name: 'LOG IN / SIGN UP', component: Registration },
     // { name: 'Contact', component: Footer },
-    { name: 'Cart 🛒', component: Cart },
+    { name: 'YOUR CART 🛒', component: Cart },
 
 ];
 

@@ -9,9 +9,10 @@ body {
 
 body {
     font-family: 'Poppins', 'Arial', sans-serif;
-    padding: 2rem;
-    background-image: url(./assets/homePicture.jpg);
+    // padding: 2rem;
+    background-image: url(./assets/homePicture3.jpg);
     background-size: cover;
+
 
 }
 
@@ -19,7 +20,7 @@ header .logo {
     text-align: center;
 
     img {
-        height: 7rem;
+        height: 8rem;
         margin-bottom: 1rem;
         border-radius: 80%;
     }
@@ -27,12 +28,12 @@ header .logo {
 }
 
 
+
 nav {
-    background-color: rgba(76, 187, 126, 0.4);
+    padding-bottom: 5px;
+    background-color: rgba(98, 96, 96, 0.447);
     display: flex;
     flex-wrap: wrap;
-
-
 
     button,
     .btn {
@@ -41,9 +42,38 @@ nav {
         background: transparent;
         border: 0;
         border-radius: 0;
-        font-size: 1.2rem;
-        padding: 1rem 0;
-        // color: whitesmoke;
+        padding: 1rem 0 0.2rem 0;
+        display: inline-block;
+        position: relative;
+        color: #f8f8f8;
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+
+
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background-color: #F2C879;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        &:hover {
+            color: #f8f8f8;
+        }
 
         @media (max-width: 992px) {
             flex-basis: 235px;
@@ -59,19 +89,69 @@ nav {
             flex-basis: 180px;
 
         }
-
-        // &:active,
-        // &:focus,
-        // &:hover {
-        //     background: transparent;
-        // }
     }
-
-    // .btn.btn-active {
-    //     background-color: #f4b700;
-    //     text-decoration: underline;
-    // }
 }
+
+
+
+
+
+
+
+//TU ZACZAC
+
+// nav {
+//     background-color: rgba(76, 187, 126, 0.4);
+//     display: flex;
+//     flex-wrap: wrap;
+
+
+//     button,
+//     .btn {
+//         flex-basis: 150px;
+//         flex-grow: 1;
+//         background: transparent;
+//         border: 0;
+//         border-radius: 0;
+//         font-size: 1.2rem;
+//         padding: 1rem 0;
+//         // color: whitesmoke;
+
+
+//         @media (max-width: 992px) {
+//             flex-basis: 235px;
+
+//         }
+
+//         @media (max-width: 768px) {
+//             flex-basis: 200px;
+
+//         }
+
+//         @media (max-width: 576px) {
+//             flex-basis: 180px;
+
+//         }
+
+
+//TU SKONCZYC
+
+
+// &:active,
+// &:focus,
+// &:hover {
+//     background: transparent;
+//     color: #1791b3;
+
+// }
+
+// }
+
+// .btn.btn-active {
+//     background-color: #f4b700;
+//     text-decoration: underline;
+// }
+// }
 
 main {
 
@@ -145,6 +225,8 @@ section {
     h2,
     p {
         text-align: center;
+        // color: #F2C879;
+        // color: #F2BB13;
     }
 }
 
