@@ -1,7 +1,8 @@
 export function Home() {
-    const section = document.createElement('section');
+  const section = document.createElement('section');
+  section.classList.add("home");
 
-    section.innerHTML = `
+  section.innerHTML = `
     <h2>Witaj w Mindfull Space</h2>
     <p>Twoje samopoczucie jest dla nas najważniejsze</p>
     <section class="reservation">
@@ -14,7 +15,7 @@ export function Home() {
     </form>
   </section>
     `;
-    return section;
+  return section;
 }
 
 //moze tutaj dodac inputy z data

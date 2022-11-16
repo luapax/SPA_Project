@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Pacifico&family=Roboto&family=Roboto+Slab&family=Satisfy&display=swap');
 
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Alice', 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', 'Arial', sans-serif;
+
     // padding: 2rem;
     background-image: url(./assets/homePicture3.jpg);
     background-size: cover;
@@ -46,7 +48,7 @@ nav {
         display: inline-block;
         position: relative;
         color: #f8f8f8;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         letter-spacing: 0.2rem;
 
 
@@ -93,50 +95,6 @@ nav {
 }
 
 
-
-
-
-
-
-//TU ZACZAC
-
-// nav {
-//     background-color: rgba(76, 187, 126, 0.4);
-//     display: flex;
-//     flex-wrap: wrap;
-
-
-//     button,
-//     .btn {
-//         flex-basis: 150px;
-//         flex-grow: 1;
-//         background: transparent;
-//         border: 0;
-//         border-radius: 0;
-//         font-size: 1.2rem;
-//         padding: 1rem 0;
-//         // color: whitesmoke;
-
-
-//         @media (max-width: 992px) {
-//             flex-basis: 235px;
-
-//         }
-
-//         @media (max-width: 768px) {
-//             flex-basis: 200px;
-
-//         }
-
-//         @media (max-width: 576px) {
-//             flex-basis: 180px;
-
-//         }
-
-
-//TU SKONCZYC
-
-
 // &:active,
 // &:focus,
 // &:hover {
@@ -164,20 +122,63 @@ main {
         margin: 2rem 0 0 0;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-family: Alice;
+    }
+
     ul {
         list-style: none;
         padding: 0;
+        display: flex;
+        // background-color: rgba(192, 163, 110, 0.229);
+
+
+        justify-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
         li {
-            background-color: #1791b3;
-            box-shadow: #00576e 0 2px 8px 2px;
-            color: #fff;
-            padding: 1rem;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100px;
+            margin: 2rem;
+            justify-content: space-around;
+
+            // flex-grow: 1;
+            // align-self: flex-end;
+            // background-color: #857340;
+            // background-color: rgba(152, 150, 150, 0.808);
+            // border-radius: 5%;
+            // box-shadow: #ffffff 0 2px 8px 2px;
+            color: black; // padding: 1rem;
+            border: #00576e 2px solid;
+            background-color: rgba(192, 163, 110, 0.914);
+
+            h5 {
+                font-family: Pacifico, sans-serif;
+            }
+
+            p,
+            h5,
+            h6 {
+                margin: 0.4rem;
+                text-align: center;
+                justify-content: space-around;
+            }
+
 
             footer {
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
+                justify-content: space-around;
+                padding: 0.4rem;
 
                 &>*+* {
                     margin-left: 1rem;
@@ -187,8 +188,11 @@ main {
             button,
             .btn {
                 background: transparent;
-                border: 1px solid #fff;
-                color: #fff;
+                border: 1px solid #00576e;
+                color: white;
+                background-color: #00576e;
+                letter-spacing: 0.1rem;
+                font-size: 0.9rem;
             }
         }
 
@@ -212,7 +216,7 @@ main {
         h4,
         h5,
         h6 {
-            background: #ddc47d;
+            // background: #ddc37dbd;
             color: white;
             margin: 0;
             padding: 1rem 0.5rem;
@@ -220,11 +224,88 @@ main {
     }
 }
 
-section {
+//SEKCJA ROOM STYLE
+
+.rooms {
+
+    h2 {
+        text-shadow: #00576e 1px 1px 1px;
+    }
 
     h2,
     p {
         text-align: center;
+        color: #f8f8f8;
+    }
+
+    @media (max-width: 1500px) {
+        h2 {
+            padding-top: 2rem;
+            color: black;
+            box-shadow: none;
+        }
+
+        background-color: rgba(199, 192, 192, 0.923);
+
+    }
+
+    // @media (max-width: 992px) {
+    //     h2 {
+    //         padding-top: 2rem;
+    //         color: black;
+    //         box-shadow: none;
+    //     }
+
+    //     background-color: rgba(199, 192, 192, 0.923);
+
+    // }
+
+    // @media (max-width: 768px) {
+    //     background-color: rgba(199, 192, 192, 0.923);
+
+    //     h2 {
+    //         padding-top: 2rem;
+    //         color: black;
+    //         box-shadow: none;
+    //     }
+
+    // }
+
+    // @media (max-width: 576px) {
+
+    //     background-color: rgba(199, 192, 192, 0.923);
+
+    //     h2 {
+    //         padding-top: 2rem;
+    //         color: black;
+    //         box-shadow: none;
+    //     }
+
+    // }
+}
+
+
+
+
+//SEKCJA HOME STYLE
+.home {
+    // background-color: #f2c879c0;
+    // border: #00576e 2px solid;
+
+    h2 {
+        margin-top: 4rem;
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    h2,
+    p {
+        text-align: center;
+        color: #f8f8f8;
+        text-shadow: #00576e 2px 2px 2px;
+
         // color: #F2C879;
         // color: #F2BB13;
     }

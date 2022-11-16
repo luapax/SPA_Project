@@ -19,8 +19,11 @@ export function RoomsListItem(room) {
     cartManager.addItem(room);
   });
 
+
   li.innerHTML = `
-      <h4>${room.name}</h4>
+      <img src=${room.img} width=auto height=150></img>
+      <h6>Room</h5>
+      <h5>${room.name}</h4>
       <p>
         <strong>${room.price.toFixed(2)} zł</strong>
       </p>

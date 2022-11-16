@@ -2,6 +2,7 @@ import { RoomsListItem } from './RoomsListItem';
 
 export function RoomsList() {
     const section = document.createElement('section');
+    section.classList.add("rooms");
 
     section.innerHTML = `
     <h2>Rooms List</h2>
