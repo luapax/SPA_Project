@@ -1,5 +1,5 @@
 import { Home } from '../views/Home';
-import { RoomList } from '../views/RoomList';
+import { RoomsList } from '../views/RoomsList';
 import { Cart } from '../views/Cart';
 import { Treatments } from '../views/Treatments';
 import { Booking } from '../views/Booking';
@@ -10,7 +10,7 @@ import { Footer } from '../views/Footer'
 // Nawigacja stworzona na podstawie poniższej tablicy
 const navItems = [
     { name: 'HOME', component: Home },
-    { name: 'ROOMS', component: RoomList },
+    { name: 'ROOMS', component: RoomsList },
     { name: 'TREATMENTS', component: Treatments },
     { name: 'BOOKING', component: Booking },
     { name: 'LOG IN / SIGN UP', component: Registration },
