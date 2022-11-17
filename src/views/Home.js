@@ -7,11 +7,17 @@ export function Home() {
     <p>Twoje samopoczucie jest dla nas najważniejsze</p>
     <section class="reservation">
     <form action="">
+    <div>
       <label>Arrival</label>
       <input type="date" placeholder="12 Lip">
+      </div>
+      <div>
       <label>Departure</label>
       <input type="date" placeholder="15 Lip">
+      </div>
+
       <button>Book</button>
+
     </form>
   </section>
     `;
