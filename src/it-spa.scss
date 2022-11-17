@@ -231,6 +231,9 @@ main {
 //SEKCJA TREATMENTS STYLE
 
 .treatments {
+    border-top: #00576e 1px solid;
+    margin-top: 2rem;
+
     ul {
         margin: 0;
     }
@@ -277,6 +280,8 @@ main {
 }
 
 .rooms {
+    margin-top: 2rem;
+
     ul {
         margin-bottom: 0;
     }
@@ -292,6 +297,8 @@ main {
     }
 
     @media (max-width: 1500px) {
+        border-top: #00576e 1px solid;
+        margin-top: 2rem;
         background-color: rgba(192, 163, 110, 0.96);
 
         li {
@@ -310,6 +317,47 @@ main {
     }
 
 
+}
+
+//SEKCJA CART
+.cart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    // background-color: #f2c879d6;
+    background-color: rgba(192, 163, 110, 0.96);
+
+    td,
+    th {
+        max-width: 50px;
+        padding-left: 2rem;
+        text-align: center;
+
+        strong {}
+    }
+
+
+
+
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    th {
+        text-decoration: underline;
+    }
+
+    td button {
+        background-color: rgba(32, 31, 31, 0.616);
+        padding: 0.2rem;
+        margin: 0.4rem;
+    }
+
+
+    border: #00576e 1px solid;
 }
 
 
@@ -363,5 +411,8 @@ main {
     padding: 0;
     margin: 0; // background-color: #F2C879;
     border-top: #00576e 2px solid;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
 }

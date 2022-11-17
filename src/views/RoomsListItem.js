@@ -7,6 +7,8 @@ export function RoomsListItem(room) {
 
   const li = document.createElement('li');
 
+
+  // psucie
   const readMoreButton = Button('Read More', () => {
     const navigateEvent = new CustomEvent('navigate', {
       detail: () => RoomDetails(room.id)
