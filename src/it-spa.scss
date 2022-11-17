@@ -144,6 +144,7 @@ main {
         flex-wrap: wrap;
 
         li {
+            min-height: 330px;
             min-width: 300px;
             display: flex;
             flex-direction: column;
@@ -160,6 +161,7 @@ main {
             color: black; // padding: 1rem;
             border: #00576e 2px solid;
             background-color: rgba(192, 163, 110, 0.914);
+            // background-color: #f2c879ed;
 
             h5 {
                 font-family: Pacifico, sans-serif;
@@ -224,9 +226,57 @@ main {
     }
 }
 
-//SEKCJA ROOM STYLE
+
+//SEKCJA TREATMENTS STYLE
+
+.treatments {
+    ul {
+        margin: 0;
+    }
+
+    li {
+        // margin: 2rem 4rem;
+        min-height: 350px;
+        min-width: 270px;
+        // background-color: rgba(116, 116, 121, 0.666);
+        background-color: #f2c8799f;
+        // background-color: rgb(136, 116, 78);
+
+
+    }
+
+    h2 {
+        margin: 0;
+        padding-top: 2rem;
+        color: black;
+        text-align: center;
+    }
+
+    h5 {
+        margin-bottom: 1rem;
+    }
+
+    h6 {
+        font-size: 1.1rem;
+        font-style: italic;
+        font-family: Alice, 'Arial', sans-serif;
+        padding: 0;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 1rem;
+        color: #f8f8f8;
+    }
+
+
+    background-color: #F2C879;
+    background-color: rgba(192, 163, 110, 0.96);
+
+}
 
 .rooms {
+
 
     h2 {
         text-shadow: #00576e 1px 1px 1px;
@@ -239,49 +289,23 @@ main {
     }
 
     @media (max-width: 1500px) {
-        h2 {
-            padding-top: 2rem;
-            color: black;
-            box-shadow: none;
+        background-color: rgba(192, 163, 110, 0.96);
+
+        li {
+            background-color: #f2c8799f;
         }
 
-        background-color: rgba(199, 192, 192, 0.923);
+        h2 {
+            padding-top: 1rem;
+            color: black;
+            text-shadow: none;
+        }
 
+        // background-color: rgba(199, 192, 192, 0.923);
+        // border: #00576e 2px solid;
     }
 
-    // @media (max-width: 992px) {
-    //     h2 {
-    //         padding-top: 2rem;
-    //         color: black;
-    //         box-shadow: none;
-    //     }
 
-    //     background-color: rgba(199, 192, 192, 0.923);
-
-    // }
-
-    // @media (max-width: 768px) {
-    //     background-color: rgba(199, 192, 192, 0.923);
-
-    //     h2 {
-    //         padding-top: 2rem;
-    //         color: black;
-    //         box-shadow: none;
-    //     }
-
-    // }
-
-    // @media (max-width: 576px) {
-
-    //     background-color: rgba(199, 192, 192, 0.923);
-
-    //     h2 {
-    //         padding-top: 2rem;
-    //         color: black;
-    //         box-shadow: none;
-    //     }
-
-    // }
 }
 
 
@@ -324,4 +348,15 @@ main {
         }
 
     }
+}
+
+
+
+
+.footer {
+    background-color: rgb(192, 163, 110);
+    padding: 0;
+    margin: 0; // background-color: #F2C879;
+    border-top: #00576e 2px solid;
+
 }

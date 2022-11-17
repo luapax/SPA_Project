@@ -22,8 +22,8 @@ export function RoomsListItem(room) {
 
   li.innerHTML = `
       <img src=${room.img} width=auto height=150></img>
-      <h6>Room</h5>
-      <h5>${room.name}</h4>
+      <h6>Room</h6>
+      <h5>${room.name}</h5>
       <p>
         <strong>${room.price.toFixed(2)} zł</strong>
       </p>

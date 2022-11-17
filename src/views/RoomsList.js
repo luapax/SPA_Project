@@ -21,6 +21,5 @@ export function RoomsList() {
             section.append(ul);
         });
 
-    // nie zapomnij o zwroceniu elementu zawierajacego wszystko
     return section;
 }

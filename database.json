@@ -41,49 +41,56 @@
   "treatments": [
     {
       "id": 1,
-      "name": "Masaż rozgrzanym monitorem",
+      "img": "https://images.pexels.com/photos/6187852/pexels-photo-6187852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Body massage",
       "area": "back",
       "time": 30,
       "price": 80
     },
     {
       "id": 2,
-      "name": "Biczowanie kablem od myszy",
+      "img": "https://images.pexels.com/photos/6543489/pexels-photo-6543489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Face mask",
       "area": "back",
       "time": 20,
       "price": 70
     },
     {
       "id": 3,
-      "name": "Peeling odłamkami płyty CD",
+      "img": "https://images.pexels.com/photos/9898735/pexels-photo-9898735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Peeling",
       "area": "face",
       "time": 15,
       "price": 50
     },
     {
       "id": 4,
-      "name": "Pedicure woskiem z USB",
+      "img": "https://images.pexels.com/photos/4963838/pexels-photo-4963838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Pedicure",
       "area": "legs",
       "time": 25,
       "price": 100
     },
     {
       "id": 5,
-      "name": "Manicure analogowo-cyfrowy",
+      "img": "https://images.pexels.com/photos/4210658/pexels-photo-4210658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Manicure",
       "area": "hands",
       "time": 45,
       "price": 150
     },
     {
       "id": 6,
-      "name": "Kąpiel w gorącej kawie",
+      "img": "https://images.pexels.com/photos/6621191/pexels-photo-6621191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Hot bathtube",
       "area": "body",
       "time": 60,
       "price": 200
     },
     {
       "id": 7,
-      "name": "Depilacja dyskiem twardym",
+      "img": "https://images.pexels.com/photos/725998/pexels-photo-725998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Wax depilation",
       "area": "body",
       "time": 45,
       "price": 120
