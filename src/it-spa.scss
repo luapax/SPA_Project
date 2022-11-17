@@ -299,9 +299,11 @@ main {
 
 //SEKCJA CART
 .cart {
+
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin: 2rem;
+    padding-bottom: 2rem;
 
     // background-color: #f2c879d6;
     background-color: rgba(192, 163, 110, 0.96);
@@ -354,14 +356,19 @@ main {
         }
 
         label {
+            border-radius: 100% 100% 0% 0%;
+            font-family: Alice, serif;
             text-align: center;
             margin-left: 1rem;
             color: white;
             color: rgba(192, 163, 110);
             font-size: 1.4rem;
+            background-color: rgba(50, 49, 49, 0.907);
         }
 
         input {
+            border-radius: 5%;
+            text-align: center;
             margin-left: 1rem;
             width: 160px;
             height: 60px;
@@ -432,7 +439,7 @@ main {
     background-color: rgb(192, 163, 110);
     background-color: #f2c879;
     padding: 0;
-    margin: 0; // background-color: #F2C879;
+    margin-top: 0; // background-color: #F2C879;
     border-top: #00576e 2px solid;
     position: fixed;
     bottom: 0;
