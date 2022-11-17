@@ -3,6 +3,7 @@
 
 html,
 body {
+
     height: 100%;
     margin: 0;
     padding: 0;
@@ -276,7 +277,9 @@ main {
 }
 
 .rooms {
-
+    ul {
+        margin-bottom: 0;
+    }
 
     h2 {
         text-shadow: #00576e 1px 1px 1px;
@@ -296,7 +299,8 @@ main {
         }
 
         h2 {
-            padding-top: 1rem;
+            margin-top: 0;
+            padding-top: 2rem;
             color: black;
             text-shadow: none;
         }
@@ -355,6 +359,7 @@ main {
 
 .footer {
     background-color: rgb(192, 163, 110);
+    background-color: #f2c879;
     padding: 0;
     margin: 0; // background-color: #F2C879;
     border-top: #00576e 2px solid;
