@@ -9,14 +9,15 @@ export function Home() {
     <form action="">
     <div>
       <label>Arrival</label>
-      <input type="date" placeholder="12 Lip">
+      <input id="minDate" type="date" placeholder="12 Lip">
       </div>
       <div>
       <label>Departure</label>
-      <input type="date" placeholder="15 Lip">
+      <input id="maxDate" type="date" placeholder="15 Lip">
       </div>
 
-      <button>Book</button>
+      <button>Book</button> 
+
 
     </form>
   </section>
@@ -24,4 +25,3 @@ export function Home() {
   return section;
 }
 
-//moze tutaj dodac inputy z data

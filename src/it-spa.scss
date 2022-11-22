@@ -209,6 +209,25 @@ main {
     }
 }
 
+//OGOLNE SECTION
+section {
+    h2 {
+        text-shadow: #00576e 1px 1px 1px;
+    }
+
+    h2,
+    p {
+        text-align: center;
+        color: #f8f8f8;
+    }
+
+}
+
+.datesBooking {
+    color: black;
+    background-color: #F2C879;
+}
+
 
 //SEKCJA TREATMENTS STYLE
 
@@ -236,6 +255,7 @@ main {
         padding-top: 2rem;
         color: black;
         text-align: center;
+        text-shadow: none;
     }
 
     h5 {
