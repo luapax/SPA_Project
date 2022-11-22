@@ -19,7 +19,7 @@ body {
 
 }
 
-header .logo {
+header {
     text-align: center;
 
     img {
@@ -414,56 +414,60 @@ section {
     // background-color: #f2c879c0;
     // border: #00576e 2px solid;
 
-    form {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        div {
+    .reservation {
+        form {
+            margin-top: 3rem;
             display: flex;
-            flex-direction: column;
-        }
+            justify-content: center;
+            align-items: center;
 
-        label {
-            border-radius: 100% 100% 0% 0%;
-            font-family: Alice, serif;
-            text-align: center;
-            margin-left: 1rem;
-            color: white;
-            color: rgba(192, 163, 110);
-            font-size: 1.4rem;
-            background-color: rgba(50, 49, 49, 0.907);
-        }
+            .wrapperLabel1,
+            .wrapperLabel2 {
+                display: flex;
+                flex-direction: column;
+            }
 
-        input {
-            border-radius: 5%;
-            text-align: center;
-            margin-left: 1rem;
-            width: 160px;
-            height: 60px;
-            font-size: 1.1rem;
+            label {
+                border-radius: 100% 100% 0% 0%;
+                font-family: Alice, serif;
+                text-align: center;
+                margin-left: 1rem;
+                color: white;
+                color: rgba(192, 163, 110);
+                font-size: 1.4rem;
+                background-color: rgba(50, 49, 49, 0.907);
+            }
 
-        }
+            input {
+                border-radius: 5%;
+                text-align: center;
+                margin-left: 1rem;
+                width: 160px;
+                height: 60px;
+                font-size: 1.1rem;
 
-        button {
-            margin-top: 1.8rem;
-            margin-left: 2rem;
-            width: 150px;
-            height: 50px;
-            background: transparent;
-            border: 1px solid #00576e;
-            color: white;
-            background-color: #00576e;
-            letter-spacing: 0.1rem;
-            font-size: 1.15rem;
+            }
 
-            &:hover {
-                background-color: rgba(192, 163, 110);
-                color: #00576e;
-                font-weight: 600;
+            button {
+                margin-top: 1.8rem;
+                margin-left: 2rem;
+                width: 150px;
+                height: 50px;
+                background: transparent;
+                border: 1px solid #00576e;
+                color: white;
+                background-color: #00576e;
+                letter-spacing: 0.1rem;
+                font-size: 1.15rem;
+
+                &:hover {
+                    background-color: rgba(192, 163, 110);
+                    color: #00576e;
+                    font-weight: 600;
+                }
             }
         }
+
 
 
     }

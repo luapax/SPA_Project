@@ -1,9 +1,18 @@
-
-
 export function HomeBooking() {
+    const section = document.createElement('section');
+    section.classList.add('reservation');
 
-    const section = document.querySelector('section');
-    section.classList.add('datesHome');
+    const form = document.createElement('form')
+
+    const divWrapper1 = document.createElement('div');
+    divWrapper1.classList.add('wrapperLabel1');
+    const divWrapper2 = document.createElement('div');
+    divWrapper2.classList.add('wrapperLabel2');
+
+    const button = document.createElement('button');
+    button.innerHTML = "Book";
+
+
 
     const labelArrival = document.createElement('label');
     labelArrival.innerHTML = 'Arrival';
@@ -35,10 +44,23 @@ export function HomeBooking() {
     inputDepartureDate.setAttribute('max', `${departureYear}-${departureMonth}-${departureDay}`)
 
 
-    section.appendChild(labelArrival);
-    section.appendChild(inputArrivalDate);
-    section.appendChild(labelDeparture);
-    section.appendChild(inputDepartureDate);
+
+    form.appendChild(divWrapper1);
+    form.appendChild(divWrapper2);
+    form.appendChild(button);
+    form.appendChild(labelArrival)
+    form.appendChild(inputArrivalDate);
+    form.appendChild(labelDeparture);
+    form.appendChild(inputDepartureDate);
+    section.appendChild(form);
+
+    divWrapper1.appendChild(labelArrival)
+    divWrapper1.appendChild(inputArrivalDate);
+    divWrapper2.appendChild(labelDeparture);
+    divWrapper2.appendChild(inputDepartureDate);
+
+
+
     return section;
 }
 
