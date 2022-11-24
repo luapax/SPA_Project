@@ -214,28 +214,6 @@ main {
         //inaczej dla innej szerokosci wpisać
     }
 
-
-    article {
-        $bg-color-1: #fffcf2;
-        $bg-color-2: #fff6dd;
-
-        background: repeating-linear-gradient(45deg, $bg-color-1, $bg-color-1 10px, $bg-color-2 10px, $bg-color-2 20px);
-        box-shadow: #00576e 0 2px 8px 2px;
-        margin: 2em 1em;
-        padding: 1rem;
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            // background: #ddc37dbd;
-            color: white;
-            margin: 0;
-            padding: 1rem 0.5rem;
-        }
-    }
 }
 
 //OGOLNE SECTION
@@ -516,8 +494,6 @@ section {
         color: #f8f8f8;
         text-shadow: #00576e 2px 2px 2px;
 
-        // color: #F2C879;
-        // color: #F2BB13;
     }
 }
 
@@ -548,5 +524,89 @@ section {
     position: fixed;
     bottom: 0;
     width: 100%;
+
+}
+
+
+
+//SEKCJA BOOKING
+
+.booking {
+    display: flex;
+    flex-direction: column;
+
+    .bookingDetails {
+        flex-basis: 200px;
+        max-width: 600px;
+        flex-wrap: wrap;
+        color: white;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(192, 163, 110, 0.96);
+        padding: 2rem 1rem;
+        border: #00576e 2px solid;
+
+
+        div {
+            display: flex;
+            // align-self: center;
+
+            flex-direction: column;
+            margin: 0 2rem;
+            margin-bottom: 0.7rem;
+
+
+            input {
+                padding: 0.5rem 0.3rem;
+            }
+        }
+
+        .column1,
+        .column2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+
+    }
+
+    button {
+        max-width: 150px;
+        margin-top: 2rem;
+        align-self: center;
+        width: 150px;
+        height: 50px;
+        border: 1px solid #00576e;
+        color: white;
+        background-color: #00576e;
+        letter-spacing: 0.1rem;
+
+        &:hover {
+            color: rgba(192, 163, 110);
+        }
+
+
+
+
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    h2,
+    p {
+        text-align: center;
+        color: #f8f8f8;
+        text-shadow: #00576e 2px 2px 2px;
+
+    }
 
 }

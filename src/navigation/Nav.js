@@ -13,7 +13,7 @@ const navItems = [
     { name: 'ROOMS', component: RoomsList },
     { name: 'TREATMENTS', component: Treatments },
     { name: 'BOOKING', component: Booking },
-    { name: 'LOG IN / SIGN UP', component: Registration },
+    // { name: 'LOG IN / SIGN UP', component: Registration },
     // { name: 'Contact', component: Footer },
     { name: 'YOUR CART 🛒', component: Cart },
 

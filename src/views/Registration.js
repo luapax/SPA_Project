@@ -1,3 +1,5 @@
+import { Button } from "../common/Button";
+
 
 export function Registration() {
     const section = document.createElement('section');
@@ -16,5 +18,20 @@ export function Registration() {
     </div>
     <form>
     `;
+
+    const confirmationButton = Button('Confirm Reservation', () => {
+        const navigateEvent = new CustomEvent('navigate', {
+            detail: () => Registration()
+        });
+
+        document.body.dispatchEvent(navigateEvent);
+    });
+
+
+
+    section.append(confirmationButton);
+
+
+
     return section;
 }
