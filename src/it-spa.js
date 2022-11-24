@@ -1,9 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import './it-spa.scss';
 
 import { Home } from "./views/Home";
 import { Nav } from "./navigation/Nav"
-import { nodeName } from 'jquery';
+// import { nodeName } from 'jquery';
 import { CartNav } from './views/CartNav';
 
 import { CartNavSection } from "./views/CartNavSection"

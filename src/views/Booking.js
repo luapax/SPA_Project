@@ -2,6 +2,7 @@ import { HomeBooking } from "./Home-booking.js"
 import { RoomDetails } from "./RoomDetails.js";
 import { Button } from "../common/Button.js";
 import { Registration } from "./Registration.js";
+import { DatesInputs } from "../common/DatesInputs.js";
 
 
 export function Booking() {
@@ -46,7 +47,9 @@ export function Booking() {
     <div>
     <label>Phone Number</label>
     <input type="text" placeholder="Number">
-    </div>`
+    </div>
+    
+    `
 
     const confirmationButton = Button('Confirm Reservation', () => {
         const navigateEvent = new CustomEvent('navigate', {
@@ -57,10 +60,10 @@ export function Booking() {
     });
 
 
-    sectionDetails.append(confirmationButton);
+
+
+    sectionDetails.append(DatesInputs(), confirmationButton)
     section.append(sectionDetails);
-
-
 
     return section;
 }

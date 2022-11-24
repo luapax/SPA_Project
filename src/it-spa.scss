@@ -423,7 +423,10 @@ section {
 
 
     .reservation {
-        form {
+        display: flex;
+        flex-direction: column;
+
+        .divWrapperDates {
             margin-top: 3rem;
             display: flex;
             justify-content: center;
@@ -456,27 +459,28 @@ section {
 
             }
 
-            button {
-                margin-top: 1.8rem;
-                margin-left: 2rem;
-                width: 150px;
-                height: 50px;
-                background: transparent;
-                border: 1px solid #00576e;
-                color: white;
-                background-color: #00576e;
-                letter-spacing: 0.1rem;
-                font-size: 1.15rem;
 
-                &:hover {
-                    background-color: rgba(192, 163, 110);
-                    color: #00576e;
-                    font-weight: 600;
-                }
-            }
         }
 
+        button {
+            align-self: center;
+            margin-top: 1.8rem;
+            margin-left: 2rem;
+            width: 150px;
+            height: 50px;
+            background: transparent;
+            border: 1px solid #00576e;
+            color: white;
+            background-color: #00576e;
+            letter-spacing: 0.1rem;
+            font-size: 1.15rem;
 
+            &:hover {
+                background-color: rgba(192, 163, 110);
+                color: #00576e;
+                font-weight: 600;
+            }
+        }
 
     }
 
@@ -528,7 +532,6 @@ section {
 }
 
 
-
 //SEKCJA BOOKING
 
 .booking {
@@ -537,6 +540,7 @@ section {
     flex-direction: column;
 
     align-items: center;
+
 
     .bookingDetails {
         flex-basis: 250px;
@@ -548,6 +552,7 @@ section {
         background-color: rgba(192, 163, 110, 0.96);
         padding: 2rem 1rem;
         border: #00576e 2px solid;
+
 
 
         div {
@@ -568,27 +573,37 @@ section {
             flex-direction: row;
         }
 
+        button {
+            max-width: 150px;
+            margin: 1.5rem;
+            // align-self: center;
+            width: 150px;
+            height: 50px;
+            border: 1px solid #00576e;
+            color: white;
+            background-color: #00576e;
+            letter-spacing: 0.1rem;
+            padding-bottom: 3.4rem;
 
+            &:hover {
+                color: rgba(192, 163, 110);
+            }
 
-    }
+        }
 
-    button {
-        max-width: 150px;
-        margin-top: 1.5rem;
-        align-self: center;
-        width: 150px;
-        height: 50px;
-        border: 1px solid #00576e;
-        color: white;
-        background-color: #00576e;
-        letter-spacing: 0.1rem;
-        padding-bottom: 3.4rem;
-
-        &:hover {
-            color: rgba(192, 163, 110);
+        .inputArrival,
+        .inputDeparture {
+            height: 20px;
+            margin: 1rem;
+            background-color: blue;
         }
 
     }
+
+
+
+
+
 
     h2 {
         margin-top: 2rem;
