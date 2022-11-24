@@ -37,10 +37,9 @@ export function Nav() {
         return navButton;
     });
 
-
-
-
+    navButtons[navButtons.length - 1].classList.add('cartButton');
     nav.append(...navButtons);
+
     return nav;
 }
 

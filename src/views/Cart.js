@@ -4,19 +4,19 @@ import { Button } from '../common/Button';
 
 
 export function Cart() {
-    const section = document.createElement('section');
-    section.classList.add('cart');
+  const section = document.createElement('section');
+  section.classList.add('cart');
 
-    section.innerHTML = `
+  section.innerHTML = `
     <h2>Cart</h2>
     <p>Oto zawartość Twojego koszyka:</p>
   `;
 
-    const table = document.createElement('table');
-    table.classList.add('table');
+  const table = document.createElement('table');
+  table.classList.add('table');
 
-    const tableHead = document.createElement('tr');
-    tableHead.innerHTML = `
+  const tableHead = document.createElement('tr');
+  tableHead.innerHTML = `
     <th>Name</th>
     <th>Picture</th>
     <th>Price</th>
@@ -24,11 +24,11 @@ export function Cart() {
     <th></th>
   `;
 
-    //ttutua
-    const tableRows = cartManager.getAllItems().map(cartEntry => {
-        const tr = document.createElement('tr');
+  //ttutua
+  const tableRows = cartManager.getAllItems().map(cartEntry => {
+    const tr = document.createElement('tr');
 
-        tr.innerHTML = `
+    tr.innerHTML = `
       <td>${cartEntry.item.name}</td>
       <td><img width=100 height=auto src=${cartEntry.item.img}></img></td>
       <td>${cartEntry.item.price.toFixed(2)} zł</td>
@@ -38,24 +38,24 @@ export function Cart() {
      
     `;
 
-        const removeFromCart = Button('🗑️', () => {
-            cartManager.removeItem(cartEntry.item);
+    const removeFromCart = Button('🗑️', () => {
+      cartManager.removeItem(cartEntry.item);
 
-            const navigateEvent = new CustomEvent('navigate', {
-                detail: Cart
-            });
+      const navigateEvent = new CustomEvent('navigate', {
+        detail: Cart
+      });
 
-            document.body.dispatchEvent(navigateEvent);
-        });
-
-        // wstawiamy guzik do usuwania z koszyka do ostatniego elementu-dziecka w/w wiersza (tr)
-        tr.lastElementChild.append(removeFromCart);
-
-        return tr;
+      document.body.dispatchEvent(navigateEvent);
     });
 
-    const tableFooter = document.createElement('tr');
-    tableFooter.innerHTML = `
+    // wstawiamy guzik do usuwania z koszyka do ostatniego elementu-dziecka w/w wiersza (tr)
+    tr.lastElementChild.append(removeFromCart);
+
+    return tr;
+  });
+
+  const tableFooter = document.createElement('tr');
+  tableFooter.innerHTML = `
       <td></td>
       <td></td>
       <td>
@@ -64,8 +64,8 @@ export function Cart() {
       <td></td>
     `;
 
-    table.append(tableHead, ...tableRows, tableFooter);
-    section.append(table);
+  table.append(tableHead, ...tableRows, tableFooter);
+  section.append(table);
 
-    return section;
+  return section;
 }
