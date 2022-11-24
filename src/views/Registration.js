@@ -5,21 +5,32 @@ export function Registration() {
     const section = document.createElement('section');
     section.classList.add('registration')
 
+    const divButton = document.createElement('div');
+    divButton.classList.add('divButton');
+
     section.innerHTML = `
     <h2>Registration</h2>
-    <form>
-    <div>
+    <div class="form">
+    <div class='label'>
     <label>Login</label>
     <input type="text" placeholder="Your login"></input>
     </div>
-    <div>
+    <div class='label'>
     <label>Password</label>
     <input type="text" placeholder="Your password"></input>
     </div>
-    <form>
+    </div>
     `;
 
-    const confirmationButton = Button('Confirm Reservation', () => {
+    const logInButton = Button('Log In', () => {
+        const navigateEvent = new CustomEvent('navigate', {
+            detail: () => Registration()
+        });
+
+        document.body.dispatchEvent(navigateEvent);
+    });
+
+    const signInButton = Button('Sign In', () => {
         const navigateEvent = new CustomEvent('navigate', {
             detail: () => Registration()
         });
@@ -29,8 +40,8 @@ export function Registration() {
 
 
 
-    section.append(confirmationButton);
-
+    divButton.append(logInButton, signInButton);
+    section.append(divButton);
 
 
     return section;

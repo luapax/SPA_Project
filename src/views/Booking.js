@@ -28,14 +28,14 @@ export function Booking() {
     </div>
 
     <div>
-    <label>Phone Number</label>
-    <input type="text" placeholder="Phone Number">
+    <label>Street</label>
+    <input type="text" placeholder="Street">
     </div>
 
 
     <div>
-    <label>Adress</label>
-    <input type="text" placeholder="Adress">
+    <label>Street Number</label>
+    <input type="text" placeholder="Street Number">
     </div>
 
     <div>
@@ -44,8 +44,8 @@ export function Booking() {
     </div>
 
     <div>
-    <label>Name</label>
-    <input type="text" placeholder="Name">
+    <label>Phone Number</label>
+    <input type="text" placeholder="Number">
     </div>`
 
     const confirmationButton = Button('Confirm Reservation', () => {
