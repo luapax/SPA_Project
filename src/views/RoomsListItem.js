@@ -8,7 +8,6 @@ export function RoomsListItem(room) {
   const li = document.createElement('li');
 
 
-  // psucie
   const readMoreButton = Button('Read More', () => {
     const navigateEvent = new CustomEvent('navigate', {
       detail: () => RoomDetails(room.id)
@@ -32,7 +31,6 @@ export function RoomsListItem(room) {
       <footer></footer>
     `;
 
-  // ROWNOZNACZNE Z: li.lastElementChild.append(readMeButton);
   li.querySelector('footer').append(readMoreButton, addToCartButton);
 
   return li;

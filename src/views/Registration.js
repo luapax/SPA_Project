@@ -1,4 +1,5 @@
 import { Button } from "../common/Button";
+import { Booking } from "./Booking";
 
 
 export function Registration() {
@@ -32,7 +33,7 @@ export function Registration() {
 
     const signInButton = Button('Sign In', () => {
         const navigateEvent = new CustomEvent('navigate', {
-            detail: () => Registration()
+            detail: () => Booking()
         });
 
         document.body.dispatchEvent(navigateEvent);

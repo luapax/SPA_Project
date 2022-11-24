@@ -1,3 +1,7 @@
+import { Registration } from "./Registration";
+import { Button } from "../common/Button";
+
+
 export function HomeBooking() {
     const section = document.createElement('section');
     section.classList.add('reservation');
@@ -11,6 +15,14 @@ export function HomeBooking() {
 
     const button = document.createElement('button');
     button.innerHTML = "Book";
+
+    const buttonBook = Button('Book', () => {
+        const navigateEvent = new CustomEvent('navigate', {
+            detail: () => Registration()
+        });
+
+        document.body.dispatchEvent(navigateEvent);
+    });
 
 
 
@@ -47,7 +59,7 @@ export function HomeBooking() {
 
     form.appendChild(divWrapper1);
     form.appendChild(divWrapper2);
-    form.appendChild(button);
+    form.appendChild(buttonBook);
     form.appendChild(labelArrival)
     form.appendChild(inputArrivalDate);
     form.appendChild(labelDeparture);
