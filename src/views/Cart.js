@@ -24,7 +24,6 @@ export function Cart() {
     <th></th>
   `;
 
-  //ttutua
   const tableRows = cartManager.getAllItems().map(cartEntry => {
     const tr = document.createElement('tr');
 

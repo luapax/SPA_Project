@@ -3,6 +3,7 @@ import { RoomDetails } from "./RoomDetails.js";
 import { Button } from "../common/Button.js";
 import { Registration } from "./Registration.js";
 import { DatesInputs } from "../common/DatesInputs.js";
+import { cartManager } from "../cart/cart-manager.js";
 
 
 export function Booking() {
@@ -51,12 +52,29 @@ export function Booking() {
     
     `
 
-    const confirmationButton = Button('Confirm Reservation', () => {
-        const navigateEvent = new CustomEvent('navigate', {
-            detail: () => Registration()
-        });
 
-        document.body.dispatchEvent(navigateEvent);
+    const confirmationButton = Button('Confirm Reservation', () => {
+
+
+        if (input.value === null) {
+            console.log('please add all required fields');
+        }
+
+        const key = 'IT_SPA_CART';
+        const cart = localStorage.getItem(key)
+
+        if (cart === null) {
+            console.log('Nie ma nicccccc');
+            console.log(cart)
+            return;
+        }
+        else {
+            const navigateEvent = new CustomEvent('navigate', {
+                detail: () => Registration()
+            });
+
+            document.body.dispatchEvent(navigateEvent);
+        }
     });
 
 
