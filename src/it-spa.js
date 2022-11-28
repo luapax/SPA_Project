@@ -16,10 +16,10 @@ const main = document.querySelector('main');
 
 main.before(Nav());
 // main.append(CartNavSection())
-main.append(CartNavSection());
+// main.append(CartNavSection());
 main.append(Home());
 
-CartNav();
+// CartNav();
 
 
 

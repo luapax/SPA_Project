@@ -692,3 +692,49 @@ section {
     }
 
 }
+
+
+//USER SECTION
+
+.userSection {
+    flex-basis: 250px;
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: rgba(192, 163, 110, 0.96);
+
+    }
+
+
+    h2 {
+        margin: 0;
+        background-color: rgba(192, 163, 110, 0.96);
+        align-self: center;
+
+    }
+
+    button {
+        max-width: 150px;
+        align-self: center;
+        margin-top: 1.5rem;
+        align-self: center;
+        width: 150px;
+        height: 50px;
+        border: 1px solid #00576e;
+        color: white;
+        background-color: #00576e;
+        letter-spacing: 0.1rem;
+        margin: 1rem 1rem;
+
+        &:hover {
+            color: rgba(192, 163, 110);
+        }
+
+    }
+}
