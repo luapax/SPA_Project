@@ -47,28 +47,35 @@ nav {
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
 
-        &:after {
-            content: '';
-            position: absolute;
-            width: 80%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            background-color: #F2C879;
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-        }
+        div {
+            padding: 0 0;
+            margin: 0 0;
+            display: inline-block;
 
-        &:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 80%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                background-color: #F2C879;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
 
-        &:hover {
-            color: #f8f8f8;
+
+            &:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            &:hover {
+                color: #f8f8f8;
+            }
         }
 
         @media (max-width: 992px) {

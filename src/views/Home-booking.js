@@ -10,19 +10,19 @@ export function HomeBooking() {
 
 
     const buttonBook = Button('Book', () => {
+
         const navigateEvent = new CustomEvent('navigate', {
             detail: () => Booking()
         });
 
         document.body.dispatchEvent(navigateEvent);
+
+
     });
 
 
     section.append(DatesInputs());
     section.append(buttonBook);
-
-
-
 
 
 

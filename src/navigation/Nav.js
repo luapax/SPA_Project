@@ -23,9 +23,15 @@ const navItems = [
 export function Nav() {
     const nav = document.createElement('nav');
     const navButtons = navItems.map(navItem => {
+
+        const div = document.createElement('div');
         const navButton = document.createElement('button');
         navButton.setAttribute('type', 'button');
-        navButton.innerText = navItem.name;
+        // navButton.innerText = navItem.name;
+        div.innerText = navItem.name;
+
+
+        navButton.appendChild(div);
 
 
         navButton.addEventListener('click', () => {

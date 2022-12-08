@@ -1,4 +1,5 @@
 import { HomeBooking } from "./Home-booking"
+import { CartNavSection } from "./CartNavSection";
 
 export function Home() {
   const section = document.createElement('section');
@@ -9,11 +10,11 @@ export function Home() {
     <p>Twoje samopoczucie jest dla nas najważniejsze</p>
     `;
 
-  // section.before(CartNavSection());
+  section.append(CartNavSection());
   section.append(HomeBooking());
+
 
   return section;
 }
-
 
 

@@ -74,7 +74,20 @@ export const cartManager = {
                     return accumulator + cartEntry.quantity * cartEntry.item.price;
                 }, 0);
         }
+    },
+
+    isEmpty() {
+        const cart = localStorage.getItem(key);
+
+        if (cart !== null) {
+            const parsedContent = JSON.parse(cart);
+            return Object.entries(parsedContent).length === 0;
+        }
+
+        return true;
     }
+
+
 };
 
 

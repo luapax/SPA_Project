@@ -4,17 +4,17 @@ import { Button } from '../common/Button';
 import { CartNavSection } from './CartNavSection';
 
 
-// export function CartNav() {
-//     const cartNavSection = document.querySelector('.cartNavSection')
-//     const cartButton = document.querySelector('.cartButton');
-//     cartButton.addEventListener('mouseenter', () => {
-//         cartNavSection.style.display = 'flex';
+export function CartNav() {
+    const cartNavSection = document.querySelector('.cartNavSection')
+    const cartButton = document.querySelector('.cartButton');
+    cartButton.addEventListener('mouseenter', () => {
+        cartNavSection.style.backgroundColor = 'flex';
 
-//     })
+    })
 
-//     cartButton.addEventListener('mouseout', () => {
-//         cartNavSection.style.display = 'none';
+    cartButton.addEventListener('mouseleave', () => {
+        cartNavSection.style.display = 'none';
 
-//     })
+    })
 
-// }
+}

@@ -28,6 +28,9 @@ export function DatesInputs() {
 
     inputArrivalDate.setAttribute('type', 'date')
     inputArrivalDate.setAttribute('min', `${arrivalYear}-${arrivalMonth}-${arrivalDay}`)
+    inputArrivalDate.setAttribute('required', 'required')
+
+
 
 
     //Department maxDate function
@@ -41,7 +44,7 @@ export function DatesInputs() {
 
     inputDepartureDate.setAttribute('type', 'date')
     inputDepartureDate.setAttribute('max', `${departureYear}-${departureMonth}-${departureDay}`)
-
+    inputDepartureDate.setAttribute('required', 'required')
 
 
     divWrapper1.appendChild(labelArrival)

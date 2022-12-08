@@ -56,16 +56,8 @@ export function Booking() {
     const confirmationButton = Button('Confirm Reservation', () => {
 
 
-        if (input.value === null) {
-            console.log('please add all required fields');
-        }
-
-        const key = 'IT_SPA_CART';
-        const cart = localStorage.getItem(key)
-
-        if (cart === null) {
-            console.log('Nie ma nicccccc');
-            console.log(cart)
+        if (cartManager.isEmpty() === true) {
+            alert("Your cart is empty!")
             return;
         }
         else {
