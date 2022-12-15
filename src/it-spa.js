@@ -16,10 +16,11 @@ const main = document.querySelector('main');
 
 main.before(Nav());
 // main.append(CartNavSection())
-// main.append(CartNavSection());
+main.append(CartNavSection());
 main.append(Home());
 
-// CartNav();
+
+CartNav();
 
 
 
@@ -32,6 +33,10 @@ document.body.addEventListener('navigate', (event) => {
 
     main.innerHTML = '';
     main.append(Component());
+    main.append(CartNavSection())
 
+    CartNav();
 
 });
+// main.append(CartNavSection());
+

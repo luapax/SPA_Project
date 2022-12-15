@@ -51,14 +51,15 @@ nav {
             padding: 0 0;
             margin: 0 0;
             display: inline-block;
+            position: relative;
 
             &:after {
                 content: '';
                 position: absolute;
-                width: 80%;
+                width: 110%;
                 transform: scaleX(0);
                 height: 2px;
-                bottom: 0;
+                bottom: -5px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
@@ -186,36 +187,36 @@ main {
         }
     }
 
+}
 
 
-
-    //CART NAV 
-    .cartNavSection {
-        display: none;
-        flex-direction: column;
-        padding: 1rem;
-        padding-bottom: 0;
-        border: 1px solid #00576e;
-        background-color: rgba(192, 163, 110, 0.914);
-        position: absolute;
-        top: 40%;
-        right: 2%;
-
-
-        th,
-        td {
-            text-align: center;
-        }
-
-        h2 {
-            margin: 0.2rem;
-        }
+//CART NAV 
+.cartNavSection {
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 0;
+    border: 1px solid #00576e;
+    background-color: rgba(192, 163, 110, 0.914);
+    position: absolute;
+    top: 40%;
+    right: 2%;
 
 
-        //inaczej dla innej szerokosci wpisać
+    th,
+    td {
+        text-align: center;
     }
 
+    h2 {
+        margin: 0.2rem;
+    }
+
+
+    //inaczej dla innej szerokosci wpisać
 }
+
+
 
 //OGOLNE SECTION
 section {

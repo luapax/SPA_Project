@@ -8,7 +8,7 @@ export function CartNav() {
     const cartNavSection = document.querySelector('.cartNavSection')
     const cartButton = document.querySelector('.cartButton');
     cartButton.addEventListener('mouseenter', () => {
-        cartNavSection.style.backgroundColor = 'flex';
+        cartNavSection.style.display = 'flex';
 
     })
 

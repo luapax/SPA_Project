@@ -15,19 +15,19 @@ export function Booking() {
     const confirmationButton = document.createElement('button')
     confirmationButton.innerText = "Book"
 
-    confirmationButton.addEventListener('click', (e) => {
-        // e.preventDefault();
-        // if (cartManager.isEmpty() === true) {
-        //     alert("Your cart is empty!")
-        //     return;
-        // }
-        // else {
-        //     const navigateEvent = new CustomEvent('navigate', {
-        //         detail: () => Registration()
-        //     });
-        //     document.body.dispatchEvent(navigateEvent);
-        // }
-    })
+    // confirmationButton.addEventListener('click', (e) => {
+    //     e.preventDefault();
+    //     if (cartManager.isEmpty() === true) {
+    //         alert("Your cart is empty!")
+    //         return;
+    //     }
+    //     else {
+    //         const navigateEvent = new CustomEvent('navigate', {
+    //             detail: () => Registration()
+    //         });
+    //         document.body.dispatchEvent(navigateEvent);
+    //     }
+    // })
 
     form.append(input1, confirmationButton);
     section.prepend(form)

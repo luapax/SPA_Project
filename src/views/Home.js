@@ -10,7 +10,7 @@ export function Home() {
     <p>Twoje samopoczucie jest dla nas najważniejsze</p>
     `;
 
-  section.append(CartNavSection());
+  // section.append(CartNavSection());
   section.append(HomeBooking());
 
 
