@@ -2,15 +2,15 @@ import { Button } from "../common/Button";
 import { Booking } from "./Booking";
 import { UserSection } from "./RegisteredUser";
 import { Input } from "../common/Input";
-import { LogIn } from "./LogIn";
+import { Registration } from "./Registration";
 
 
-export function Registration() {
+export function LogIn() {
     const section = document.createElement('section');
-    section.classList.add('registration')
+    section.classList.add('login')
 
     section.innerHTML = `
-    <h2>Registration</h2>
+    <h2>Log In</h2>
     `;
 
 
@@ -18,39 +18,27 @@ export function Registration() {
     sectionDetails.classList.add('loginDetails');
 
     const form = document.createElement('form');
-    form.setAttribute("id", "registration")
+    form.setAttribute("id", "login")
 
     //Section Login
     const sectionLogin = document.createElement('section');
     sectionLogin.classList.add('sectionLogin');
     const labelLogin = document.createElement('label')
     labelLogin.innerText = "E-mail";
-    const loginInput = Input("Login", "Please write your e-mail")
+    const loginInput = Input("Login", "Please add your e-mail")
     loginInput.setAttribute("id", "login")
-    loginInput.setAttribute("type", "email");
+    // loginInput.setAttribute("type", "email");
     sectionLogin.append(labelLogin, loginInput);
 
 
     //Section password
     const sectionPassword = document.createElement('section');
-    sectionPassword.classList.add('sectionPassword2');
+    sectionPassword.classList.add('sectionPassword');
     const labelPassword = document.createElement('label')
     labelPassword.innerText = "Password";
-    const passwordInput = Input("Password", "Please write your password")
-    passwordInput.setAttribute("id", "password")
-
+    const passwordInput = Input("Password", "Please add your password")
+    passwordInput.setAttribute("id", "login")
     sectionPassword.append(labelPassword, passwordInput);
-
-
-    //Section password
-    const sectionPassword2 = document.createElement('section');
-    sectionPassword2.classList.add('sectionPassword2');
-    const labelPassword2 = document.createElement('label')
-    labelPassword2.innerText = "Password";
-    const passwordInput2 = Input("Password2", "Please repeat your password")
-    passwordInput2.setAttribute("id", "password2")
-
-    sectionPassword2.append(labelPassword2, passwordInput2);
 
 
     // Section SignIn
@@ -58,13 +46,20 @@ export function Registration() {
     sectionSignin.classList.add('sectionSignin');
 
 
-    //Validation
-    const validLogin = /^.{4,30}$/;
+    sectionSignin.innerHTML = `
+    <p>Don't have the account?</p>
+    `;
+
+
+
+    // const passwordInput = Input("Password", "Please add your password")
+    // passwordInput.setAttribute("id", "login")
+
+    // passwordInput.classList.add('passwordInput')
+
+    const validLogin = /^.{4,10}$/;
     const validPassword = /^(?=.*[A-Z])(?=.{8,})/;
 
-
-
-    //Objekt
     const ob = {
         name: "Piotrek",
         age: 10,
@@ -77,27 +72,27 @@ export function Registration() {
 
 
 
-    const RegistrationButton = document.createElement('button')
-    RegistrationButton.innerText = "Sign In"
-    RegistrationButton.setAttribute('type', 'submit');
+    const logInButton = document.createElement('button')
+    logInButton.innerText = "Log In"
+    logInButton.setAttribute('type', 'submit');
+
+    const signInButton = document.createElement('button')
+    signInButton.innerText = "Sign In"
+    signInButton.classList.add("signInButton")
 
 
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+
         if (!loginInput.value.match(validLogin)) {
 
             // if ((loginInput.value.length == 0){
-            alert('Your login has to have at least 4 characters and maximum 8')
+            alert('Your login has to have at least 4 characters')
         }
-
 
         else if (!passwordInput.value.match(validPassword)) {
             alert("Your password has to have at least 1 capital letter and minumum 8 characters")
-        }
-        // else if (!passwordInput.value.match(validPassword) & (passwordInput.value === passwordInput2.value)) {
-        else if ((passwordInput.value !== passwordInput2.value)) {
-            alert("Your password doesn't match, please try once again")
         }
         else {
             // uzywam github server
@@ -113,17 +108,44 @@ export function Registration() {
             alert('user added!')
 
             const navigateEvent = new CustomEvent('navigate', {
-                detail: () => LogIn()
+                detail: () => UserSection()
             });
             document.body.dispatchEvent(navigateEvent);
 
+
+
         }
+
+
     })
 
 
-    form.append(sectionLogin, sectionPassword, sectionPassword2, RegistrationButton);
-    section.append(form);
+    // document.body.dispatchEvent(navigateEvent);
+
+
+
+
+    // divButton.append(logInButton, signInButton);
+
+
+    signInButton.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const navigateEvent = new CustomEvent('navigate', {
+            detail: () => Registration()
+        });
+        document.body.dispatchEvent(navigateEvent);
+
+    })
+
+
+
+    form.append(sectionLogin, sectionPassword, logInButton);
+    sectionDetails.append(form)
+    sectionSignin.append(signInButton);
+    section.append(sectionDetails, sectionSignin);
 
 
     return section;
 }
+

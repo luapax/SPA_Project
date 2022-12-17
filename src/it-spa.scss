@@ -384,6 +384,9 @@ section {
 
     // background-color: #f2c879d6;
     background-color: rgba(192, 163, 110, 0.96);
+    border: #00576e 1px solid;
+
+
 
     td,
     th {
@@ -408,7 +411,9 @@ section {
     }
 
 
-    border: #00576e 1px solid;
+
+
+
 }
 
 
@@ -539,22 +544,62 @@ section {
     display: flex;
     flex-direction: column;
 
-
     align-items: center;
 
 
     .bookingDetails {
-        flex-basis: 250px;
-        max-width: 600px;
+        // max-height: 500px;
+        flex-direction: row;
+        // min-width: 600px;
+        max-width: 700px;
         flex-wrap: wrap;
         color: white;
         display: flex;
-        justify-content: space-around;
-        align-content: space-around;
-        align-items: center;
+        // justify-content: space-around;
+        // align-content: space-around;
+        // align-items: center;
         background-color: rgba(192, 163, 110, 0.96);
         padding: 2rem 1rem;
         border: #00576e 2px solid;
+
+
+
+
+
+        form {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            // align-content: space-around;
+            // align-items: center;
+
+        }
+
+
+        .sectionInputs,
+        div {
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0.7rem;
+            padding: 0 2rem;
+            // justify-content: center;
+            align-content: space-around;
+            justify-content: flex-end;
+
+            @media (max-width: 576px) {
+                min-width: 300px;
+            }
+
+            input {
+                flex-direction: row;
+                min-width: 250px;
+                padding: 0.5rem 0.3rem;
+            }
+        }
+
+
 
 
         .divWrapperDates {
@@ -564,42 +609,41 @@ section {
             justify-content: flex-start;
             justify-items: flex-start;
             justify-self: flex-start;
+            margin-left: -1.8rem;
+
+            @media (max-width: 576px) {
+                margin-left: 0;
+            }
+
         }
 
         .datesInputs {
             input {
                 width: 199.4px;
+
+
+                @media (max-width: 576px) {
+                    min-width: 270px;
+                }
             }
         }
 
-        div {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 0.7rem;
-
-
-            input {
-                padding: 0.5rem 0.3rem;
-            }
-        }
-
-        .column1,
-        .column2 {
-            display: flex;
-            flex-direction: row;
-        }
+        // .column1,
+        // .column2 {
+        //     display: flex;
+        //     flex-direction: row;
+        // }
 
         button {
             max-width: 150px;
             margin: 1.5rem;
-            // align-self: center;
+            align-self: center;
             width: 150px;
             height: 50px;
             border: 1px solid #00576e;
             color: white;
             background-color: #00576e;
             letter-spacing: 0.1rem;
-            padding-bottom: 3.4rem;
 
             &:hover {
                 color: rgba(192, 163, 110);
@@ -608,9 +652,6 @@ section {
         }
 
     }
-
-
-
 
 
 
@@ -633,6 +674,139 @@ section {
 }
 
 
+
+//SEKCJA LOG IN
+
+
+.login {
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
+
+
+    h2,
+    p {
+        text-align: center;
+        color: #f8f8f8;
+        text-shadow: #00576e 2px 2px 2px;
+
+    }
+
+    .loginDetails {
+        // max-height: 500px;
+        flex-direction: column;
+        // min-width: 600px;
+        min-width: 350px;
+        min-height: 250px;
+        flex-wrap: wrap;
+        color: white;
+        display: flex;
+        margin-top: 1rem;
+
+        // justify-content: space-around;
+        // align-content: space-around;
+        // align-items: center;
+        background-color: rgba(192, 163, 110, 0.96);
+        padding: 2rem 1rem;
+        border: #00576e 2px solid;
+
+
+
+
+
+        form {
+            flex-direction: column;
+            display: flex;
+            justify-content: space-around;
+            // align-content: space-around;
+            // align-items: center;
+
+            .sectionLogin,
+            .sectionPassword {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 1rem;
+
+                input {
+                    min-width: 250px;
+                    padding: 0.5rem 0.3rem;
+                }
+
+                label {
+                    font-family: Alice, serif;
+                    text-align: center;
+                    color: white;
+                    font-size: 1.2rem;
+                }
+
+            }
+
+            button {
+                max-width: 150px;
+                margin-top: 1rem;
+                align-self: center;
+                width: 150px;
+                height: 50px;
+                border: 1px solid #00576e;
+                color: white;
+                background-color: #00576e;
+                letter-spacing: 0.1rem;
+
+
+                &:hover {
+                    color: rgba(192, 163, 110);
+                }
+            }
+
+
+        }
+    }
+
+    .sectionSignin {
+
+        display: flex;
+        flex-direction: row;
+        color: white;
+        background-color: rgba(192, 163, 110, 0.96);
+        // padding: 2rem 1rem;
+        // border: #00576e 2px solid;
+        min-width: 350px;
+        justify-content: space-between;
+        align-items: center;
+
+        border: 2px solid #00576e;
+
+
+        p {
+            margin: 0;
+            padding-left: 1rem;
+        }
+
+        .signInButton {
+            max-width: 150px;
+            width: 150px;
+            height: 50px;
+            border: 1px solid #00576e;
+            color: white;
+            background-color: #00576e;
+            letter-spacing: 0.1rem;
+
+            &:hover {
+                color: rgba(192, 163, 110);
+            }
+        }
+
+
+    }
+}
+
+
+
 // SEKCJA REGISTRATION
 
 .registration {
@@ -643,63 +817,65 @@ section {
     display: flex;
     align-content: center;
 
-    padding: 2rem 1rem;
-
-    .form {
-        padding: 2rem;
-        background-color: rgba(192, 163, 110, 0.96);
-
-    }
-
-    .label {
-        display: flex;
-        flex-direction: column;
-
-        input {
-            padding: 0.6rem;
-        }
-
-    }
-
-
-    .divButton {
-
-
-        button {
-            // max-width: 150px;
-            margin-top: 1.5rem;
-            align-self: center;
-            width: 150px;
-            height: 50px;
-            border: 1px solid #00576e;
-            color: white;
-            background-color: #00576e;
-            letter-spacing: 0.1rem;
-            margin: 1rem 1rem;
-
-            &:hover {
-                color: rgba(192, 163, 110);
-            }
-        }
-    }
-
     h2 {
-        margin: 1rem;
-    }
-
-    p {
-        font-style: italic;
-    }
-
-    h2,
-    p {
+        margin-bottom: 1rem;
         text-align: center;
         color: #f8f8f8;
         text-shadow: #00576e 2px 2px 2px;
 
     }
 
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: rgba(192, 163, 110, 0.96);
+
+
+    }
+
+
+    .sectionLogin,
+    .sectionPassword,
+    .sectionPassword2 {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            min-width: 250px;
+            padding: 0.5rem 0.3rem;
+        }
+
+        label {
+            padding-top: 0.5rem;
+            font-family: Alice, serif;
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+            align-self: flex-start;
+        }
+
+    }
+
+
+    button {
+        // max-width: 150px;
+        margin-top: 1.5rem;
+        align-self: center;
+        width: 150px;
+        height: 50px;
+        border: 1px solid #00576e;
+        color: white;
+        background-color: #00576e;
+        letter-spacing: 0.1rem;
+
+        &:hover {
+            color: rgba(192, 163, 110);
+        }
+    }
 }
+
 
 
 //USER SECTION
