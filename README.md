@@ -1,13 +1,27 @@
-# IT SPA
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-Projekt polega na napisaniu aplikacji Single Page Application dla ośrodka SPA dedykowanego programistom.
 
-Aplikacja umożliwia: 
+## General info - IT SPA PROJECT
+The project is a Single Page Application for SPA dedicated to IT developers.
+The application enables:
 
-- Przeglądanie dostępnych zabiegów
-- Dodawanie wybranych zabiegów do koszyka
-- Wybór daty przyjazdu i wyjazdu oraz pokoju  
-- Rejestrację użytkownika (opcjonalnie)
-- Logowanie użytkownika (opcjonalnie)
-- Podsumowanie składanego zamówienia
+- Browse available treatments
+- Adding selected treatments to the basket
+- Selection of arrival and departure date and room
+- Summary of your order
 
+	
+## Technologies
+Project is created with:
+* HTML
+* SASS
+* JavaScript
+* Parcel
+	
+
+## Setup
+To run this project, install it locally using 
+$ npm run start:app
