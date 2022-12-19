@@ -1,9 +1,3 @@
-
-import { cartManager } from '../cart/cart-manager';
-import { Button } from '../common/Button';
-import { CartNavSection } from './CartNavSection';
-
-
 export function CartNav() {
     if (window.innerWidth < 600) {
 

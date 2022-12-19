@@ -3,19 +3,16 @@ import { RoomsList } from '../views/RoomsList';
 import { Cart } from '../views/Cart';
 import { Treatments } from '../views/Treatments';
 import { Booking } from '../views/Booking';
-import { Registration } from '../views/Registration';
-import { Footer } from '../views/Footer'
 import { LogIn } from '../views/LogIn';
 
 
-// Nawigacja stworzona na podstawie poniższej tablicy
+// Navigation made based on below []
 const navItems = [
     { name: 'HOME', component: Home },
     { name: 'ROOMS', component: RoomsList },
     { name: 'TREATMENTS', component: Treatments },
-    { name: 'BOOKING', component: LogIn },
-    { name: 'LOG IN / SIGN UP', component: Registration },
-    // { name: 'Contact', component: Footer },
+    { name: 'BOOKING', component: Booking },
+    { name: 'LOG IN', component: LogIn },
     { name: 'YOUR CART 🛒', component: Cart },
 
 ];

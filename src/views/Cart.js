@@ -47,7 +47,6 @@ export function Cart() {
       document.body.dispatchEvent(navigateEvent);
     });
 
-    // wstawiamy guzik do usuwania z koszyka do ostatniego elementu-dziecka w/w wiersza (tr)
     tr.lastElementChild.append(removeFromCart);
 
     return tr;

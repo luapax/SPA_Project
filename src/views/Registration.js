@@ -1,6 +1,3 @@
-import { Button } from "../common/Button";
-import { Booking } from "./Booking";
-import { UserSection } from "./RegisteredUser";
 import { Input } from "../common/Input";
 import { LogIn } from "./LogIn";
 
@@ -53,7 +50,7 @@ export function Registration() {
     sectionPassword2.append(labelPassword2, passwordInput2);
 
 
-    // Section SignIn
+    // Section SignUp
     const sectionSignin = document.createElement('section');
     sectionSignin.classList.add('sectionSignin');
 
@@ -62,32 +59,14 @@ export function Registration() {
     const validLogin = /^.{4,30}$/;
     const validPassword = /^(?=.*[A-Z])(?=.{8,})/;
 
-
-
-    //Objekt
-    const ob = {
-        name: "Piotrek",
-        age: 10,
-        pet: {
-            type: "ultra dog",
-            speed: 1000,
-            power: 9001
-        }
-    }
-
-
-
     const RegistrationButton = document.createElement('button')
-    RegistrationButton.innerText = "Sign In"
+    RegistrationButton.innerText = "Sign Up"
     RegistrationButton.setAttribute('type', 'submit');
-
 
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         if (!loginInput.value.match(validLogin)) {
-
-            // if ((loginInput.value.length == 0){
             alert('Your login has to have at least 4 characters and maximum 8')
         }
 
@@ -95,23 +74,12 @@ export function Registration() {
         else if (!passwordInput.value.match(validPassword)) {
             alert("Your password has to have at least 1 capital letter and minumum 8 characters")
         }
-        // else if (!passwordInput.value.match(validPassword) & (passwordInput.value === passwordInput2.value)) {
         else if ((passwordInput.value !== passwordInput2.value)) {
             alert("Your password doesn't match, please try once again")
         }
         else {
-            // uzywam github server
-            fetch('https://my-json-server.typicode.com/luapax/jsonServer/users', {
-                method: "post",
-                body: JSON.stringify({
-                    // login: loginInput.value, password: passwordInput.value
-                    login: ob,
-                })
-            })
-                .then(response => response.json())
-                .then(data => console.log(data));
-            alert('user added!')
-
+            // Code for registration of the user will be added in next step of the project - node.js
+            alert('User registration is not possible / website under reconstruction')
             const navigateEvent = new CustomEvent('navigate', {
                 detail: () => LogIn()
             });

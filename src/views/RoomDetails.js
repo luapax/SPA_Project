@@ -40,11 +40,8 @@ export function RoomDetails(id) {
         `;
 
 
-
       section.querySelector('header').remove();
       section.append(paragraph);
-
-
       section.append(backButton);
     });
 

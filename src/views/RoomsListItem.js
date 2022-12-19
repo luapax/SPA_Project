@@ -2,7 +2,7 @@ import { cartManager } from '../cart/cart-manager';
 import { Button } from '../common/Button';
 import { RoomDetails } from './RoomDetails';
 
-//tworzenie pojedynczego elementu pokoju
+//creation of a single room
 export function RoomsListItem(room) {
 
   const li = document.createElement('li');

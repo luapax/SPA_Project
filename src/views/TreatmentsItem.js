@@ -1,17 +1,17 @@
 import { cartManager } from '../cart/cart-manager';
 import { Button } from '../common/Button';
 
-//tworzenie pojedynczego elementu zabiegu
+//creation of a single treatment element
 export function TreatmentsItem(treatment) {
 
-    const li = document.createElement('li');
+  const li = document.createElement('li');
 
-    const addToCartButton = Button('Add To Cart', () => {
-        cartManager.addItem(treatment);
-    });
+  const addToCartButton = Button('Add To Cart', () => {
+    cartManager.addItem(treatment);
+  });
 
 
-    li.innerHTML = `
+  li.innerHTML = `
       <img src=${treatment.img} width=auto height=150></img>
       <h5>${treatment.name}</h5>
       <h6>Area: ${treatment.area}</h6>
@@ -22,7 +22,7 @@ export function TreatmentsItem(treatment) {
       <footer></footer>
     `;
 
-    li.querySelector('footer').append(addToCartButton);
+  li.querySelector('footer').append(addToCartButton);
 
-    return li;
+  return li;
 }

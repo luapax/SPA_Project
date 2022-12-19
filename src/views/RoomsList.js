@@ -9,7 +9,7 @@ export function RoomsList() {
     <header>Loading...</header>
   `;
 
-    // uzywam github server
+    // using github server
     fetch('https://my-json-server.typicode.com/luapax/jsonServer/rooms')
         .then(response => response.json())
         .then(rooms => {

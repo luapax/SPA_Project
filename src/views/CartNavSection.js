@@ -1,7 +1,5 @@
 
 import { cartManager } from '../cart/cart-manager';
-import { Button } from '../common/Button';
-
 
 export function CartNavSection() {
   const section = document.createElement('section');

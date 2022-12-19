@@ -9,7 +9,7 @@ export function Treatments() {
     <header>Loading...</header>
   `;
 
-    // uzywam github server
+    // using github server
     fetch('https://my-json-server.typicode.com/luapax/jsonServer/treatments')
         .then(response => response.json())
         .then(treatments => {

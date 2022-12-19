@@ -1,6 +1,4 @@
 import { Button } from "../common/Button";
-import { Booking } from "./Booking";
-
 
 export function UserSection() {
     const img = 'https://cdn.pixabay.com/photo/2020/01/22/08/19/handshake-4784749_960_720.png'

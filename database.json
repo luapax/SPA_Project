@@ -1,5 +1,16 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": 1,
+      "name": "agata@wp.pl",
+      "password": "Agataagata"
+    },
+    {
+      "id": 2,
+      "name": "kasia@wp.pl",
+      "password": "Kasiakasia"
+    }
+  ],
   "rooms": [
     {
       "id": 1,
@@ -41,7 +52,7 @@
   "treatments": [
     {
       "id": 1,
-      "img": "https://images.pexels.com/photos/6187852/pexels-photo-6187852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img": "https://images.pexels.com/photos/7365407/pexels-photo-7365407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Body massage",
       "area": "back",
       "time": 30,
@@ -49,7 +60,7 @@
     },
     {
       "id": 2,
-      "img": "https://images.pexels.com/photos/6543489/pexels-photo-6543489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img": "https://images.pexels.com/photos/3764570/pexels-photo-3764570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Face mask",
       "area": "back",
       "time": 20,
@@ -57,7 +68,7 @@
     },
     {
       "id": 3,
-      "img": "https://images.pexels.com/photos/9898735/pexels-photo-9898735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img": "https://images.pexels.com/photos/6634657/pexels-photo-6634657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Peeling",
       "area": "face",
       "time": 15,
@@ -65,7 +76,7 @@
     },
     {
       "id": 4,
-      "img": "https://images.pexels.com/photos/4963838/pexels-photo-4963838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img": "https://images.pexels.com/photos/4963840/pexels-photo-4963840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Pedicure",
       "area": "legs",
       "time": 25,
@@ -73,7 +84,7 @@
     },
     {
       "id": 5,
-      "img": "https://images.pexels.com/photos/4210658/pexels-photo-4210658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img": "https://images.pexels.com/photos/7755653/pexels-photo-7755653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "name": "Manicure",
       "area": "hands",
       "time": 45,
