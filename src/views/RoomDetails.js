@@ -14,7 +14,7 @@ export function RoomDetails(id) {
     .then(response => response.json())
     .then(room => {
 
-      const backButton = Button('Back to Room List', () => {
+      const backButton = Button('Back', () => {
         const navigateEvent = new CustomEvent('navigate', {
           detail: () => RoomsList()
         });

@@ -26,6 +26,7 @@ export const cartManager = {
             const stringifiedContent = JSON.stringify(parsedContent);
             localStorage.setItem(key, stringifiedContent);
         }
+        alert("New item added to your cart")
     },
 
     removeItem(item) {
