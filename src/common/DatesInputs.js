@@ -15,7 +15,7 @@ export function DatesInputs() {
     labelArrival.innerHTML = 'Arrival';
 
     const labelDeparture = document.createElement('label');
-    labelDeparture.innerHTML = 'Department';
+    labelDeparture.innerHTML = 'Departure';
 
     //Arrival minDate function
     const inputArrivalDate = document.createElement('input');
@@ -44,8 +44,14 @@ export function DatesInputs() {
 
     inputDepartureDate.setAttribute('type', 'date')
     inputDepartureDate.setAttribute('max', `${departureYear}-${departureMonth}-${departureDay}`)
+    inputArrivalDate.setAttribute('max', `${departureYear}-${departureMonth}-${departureDay}`)
     inputDepartureDate.setAttribute('required', 'required')
 
+    inputArrivalDate.addEventListener("change", () => {
+        console.log(inputArrivalDate.value)
+        inputDepartureDate.setAttribute('min', inputArrivalDate.value)
+
+    })
 
     divWrapper1.appendChild(labelArrival)
     divWrapper1.appendChild(inputArrivalDate);
@@ -54,9 +60,9 @@ export function DatesInputs() {
 
     divWrapperDates.appendChild(divWrapper1);
     divWrapperDates.appendChild(divWrapper2);
-
-
     section.append(divWrapperDates);
+
+
 
     return section;
 
