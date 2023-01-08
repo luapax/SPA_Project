@@ -1,0 +1,722 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Alice&family=Pacifico&family=Roboto&family=Roboto+Slab&family=Satisfy&display=swap";
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Alice, Arial, sans-serif;
+}
+
+body {
+  background-image: url("homePicture3.c719c826.jpg");
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  height: 8rem;
+  border-radius: 80%;
+  margin-bottom: 1rem;
+}
+
+nav {
+  background-color: #62606072;
+  flex-wrap: wrap;
+  padding-bottom: .8rem;
+  display: flex;
+}
+
+nav button, nav .btn {
+  color: #f8f8f8;
+  letter-spacing: .2rem;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  flex-grow: 1;
+  flex-basis: 150px;
+  padding: 1rem 0 .2rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+}
+
+nav button div, nav .btn div {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+}
+
+nav button div:after, nav .btn div:after {
+  content: "";
+  width: 110%;
+  height: 2px;
+  transform-origin: 100% 100%;
+  background-color: #f2c879;
+  margin: 0 auto;
+  transition: transform .25s ease-out;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+nav button div:hover:after, nav .btn div:hover:after {
+  transform-origin: 0 100%;
+  transform: scaleX(1);
+}
+
+nav button div:hover, nav .btn div:hover {
+  color: #f8f8f8;
+}
+
+@media (max-width: 992px) {
+  nav button, nav .btn {
+    flex-basis: 235px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav button, nav .btn {
+    flex-basis: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav button, nav .btn {
+    flex-basis: 180px;
+  }
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin: 2rem 0 0;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6, main p {
+  font-family: Alice;
+}
+
+main ul {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+main ul li {
+  min-height: 330px;
+  min-width: 300px;
+  color: #000;
+  background-color: #c0a36ee9;
+  border: 2px solid #00576e;
+  flex-direction: column;
+  flex-basis: 100px;
+  justify-content: space-around;
+  margin: 2rem;
+  display: flex;
+}
+
+main ul li h5 {
+  font-family: Pacifico, sans-serif;
+}
+
+main ul li p, main ul li h5, main ul li h6 {
+  text-align: center;
+  justify-content: space-around;
+  margin: .4rem;
+}
+
+main ul li footer {
+  justify-content: space-around;
+  align-items: center;
+  padding: .4rem;
+  display: flex;
+}
+
+main ul li footer > * + * {
+  margin-left: 1rem;
+}
+
+main ul li button, main ul li .btn {
+  color: #fff;
+  letter-spacing: .1rem;
+  background: #00576e;
+  border: 1px solid #00576e;
+  font-size: .9rem;
+}
+
+main ul li button:hover, main ul li .btn:hover {
+  color: #c0a36e;
+}
+
+main ul li + li {
+  margin-top: 2rem;
+}
+
+.cartNavSection {
+  background-color: #c0a36ee9;
+  border: 1px solid #00576e;
+  flex-direction: column;
+  padding: 1rem 1rem 0;
+  display: none;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+}
+
+.cartNavSection th, .cartNavSection td {
+  text-align: center;
+}
+
+.cartNavSection h2 {
+  margin: .2rem;
+}
+
+section h2 {
+  text-shadow: 1px 1px 1px #00576e;
+}
+
+section h2, section p {
+  text-align: center;
+  color: #f8f8f8;
+}
+
+.datesBooking {
+  color: #000;
+  background-color: #f2c879;
+}
+
+.treatments {
+  background-color: #c0a36ef5;
+  border-top: 1px solid #00576e;
+  margin-top: 2rem;
+}
+
+.treatments ul {
+  margin: 0;
+}
+
+.treatments li {
+  min-height: 350px;
+  min-width: 270px;
+  background-color: #f2c8799f;
+}
+
+.treatments h2 {
+  color: #000;
+  text-align: center;
+  text-shadow: none;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.treatments h5 {
+  margin-bottom: 1rem;
+}
+
+.treatments h6 {
+  text-align: center;
+  padding: 0;
+  font-family: Alice, Arial, sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.treatments p {
+  color: #f8f8f8;
+  margin-top: 1rem;
+}
+
+.rooms {
+  margin-top: 2rem;
+}
+
+.rooms ul {
+  margin-bottom: 0;
+}
+
+.rooms h2 {
+  text-shadow: 1px 1px 1px #00576e;
+}
+
+.rooms h2, .rooms p {
+  text-align: center;
+  color: #f8f8f8;
+}
+
+@media (max-width: 1500px) {
+  .rooms {
+    background-color: #c0a36ef5;
+    border-top: 1px solid #00576e;
+    margin-top: 2rem;
+  }
+
+  .rooms li {
+    background-color: #f2c8799f;
+  }
+
+  .rooms h2 {
+    color: #000;
+    text-shadow: none;
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+}
+
+.roomDetails {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 4rem;
+  display: flex;
+}
+
+.roomDetails p {
+  max-width: 400px;
+  background-color: #f2c879;
+  border: 2px solid #00576e;
+  flex-direction: column;
+  display: flex;
+}
+
+.roomDetails p div {
+  padding: 1rem;
+}
+
+.roomDetails button {
+  max-width: 150px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  letter-spacing: .1rem;
+  background: #00576e;
+  border: 1px solid #00576e;
+  margin-left: 2rem;
+  padding: .6rem 1rem;
+  font-size: .9rem;
+}
+
+.roomDetails button:hover {
+  color: #c0a36e;
+}
+
+.cart {
+  background-color: #c0a36ef5;
+  border: 1px solid #00576e;
+  flex-direction: column;
+  margin: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+}
+
+.cart td, .cart th {
+  max-width: 50px;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+.cart h2, .cart p {
+  text-align: center;
+}
+
+.cart th {
+  text-decoration: underline;
+}
+
+.cart td button {
+  background-color: #201f1f9d;
+  margin: .4rem;
+  padding: .2rem;
+}
+
+.home {
+  flex-direction: column;
+  display: flex;
+}
+
+.home .reservation {
+  flex-direction: column;
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.home .reservation .divWrapperDates {
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.home .reservation .divWrapperDates .wrapperLabel1, .home .reservation .divWrapperDates .wrapperLabel2 {
+  flex-direction: column;
+  display: flex;
+}
+
+.home .reservation .divWrapperDates label {
+  text-align: center;
+  color: #fff;
+  color: #c0a36e;
+  background-color: #323131e7;
+  border-radius: 100% 100% 0% 0%;
+  margin-left: 1rem;
+  font-family: Alice, serif;
+  font-size: 1.4rem;
+}
+
+.home .reservation .divWrapperDates input {
+  text-align: center;
+  width: 160px;
+  height: 60px;
+  border-radius: 5%;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.home .reservation button {
+  max-width: 150px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  letter-spacing: .1rem;
+  background: #00576e;
+  border: 1px solid #00576e;
+  align-self: center;
+  margin-top: 1.8rem;
+  margin-left: 2rem;
+  font-size: 1.15rem;
+}
+
+.home .reservation button:hover {
+  color: #00576e;
+  background-color: #c0a36e;
+  font-weight: 600;
+}
+
+.home h2 {
+  margin-top: 4rem;
+}
+
+.home p {
+  font-style: italic;
+}
+
+.home h2, .home p {
+  text-align: center;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 2px #00576e;
+}
+
+@media (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+
+  nav button {
+    flex-basis: 60px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #f2c879;
+  border-top: 2px solid #00576e;
+  margin-top: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+}
+
+.booking {
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  display: flex;
+}
+
+.booking .bookingDetails {
+  max-width: 700px;
+  color: #fff;
+  background-color: #c0a36ef5;
+  border: 2px solid #00576e;
+  flex-flow: wrap;
+  padding: 2rem 1rem;
+  display: flex;
+}
+
+.booking .bookingDetails form {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+}
+
+.booking .bookingDetails .sectionInputs, .booking .bookingDetails div {
+  min-width: 300px;
+  flex-direction: column;
+  place-content: space-around flex-end;
+  margin-bottom: .7rem;
+  padding: 0 2rem;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .booking .bookingDetails .sectionInputs, .booking .bookingDetails div {
+    min-width: 300px;
+  }
+}
+
+.booking .bookingDetails .sectionInputs input, .booking .bookingDetails div input {
+  min-width: 250px;
+  flex-direction: row;
+  padding: .5rem .3rem;
+}
+
+.booking .bookingDetails .divWrapperDates {
+  align-content: space-around;
+  align-self: flex-start;
+  margin-left: -2.5rem;
+}
+
+@media (max-width: 576px) {
+  .booking .bookingDetails .divWrapperDates {
+    margin-left: 0;
+  }
+}
+
+.booking .bookingDetails .datesInputs input {
+  width: 199.4px;
+}
+
+@media (max-width: 576px) {
+  .booking .bookingDetails .datesInputs input {
+    min-width: 270px;
+  }
+}
+
+.booking .bookingDetails button {
+  max-width: 150px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  letter-spacing: .1rem;
+  background-color: #00576e;
+  border: 1px solid #00576e;
+  align-self: center;
+  margin: 1.5rem;
+}
+
+.booking .bookingDetails button:hover {
+  color: #c0a36e;
+}
+
+.booking h2 {
+  margin-top: 2rem;
+}
+
+.booking p {
+  font-style: italic;
+}
+
+.booking h2, .booking p {
+  text-align: center;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 2px #00576e;
+}
+
+.login {
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+
+.login h2, .login p {
+  text-align: center;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 2px #00576e;
+}
+
+.login .loginDetails {
+  min-width: 350px;
+  min-height: 250px;
+  color: #fff;
+  background-color: #c0a36ef5;
+  border: 2px solid #00576e;
+  flex-flow: column wrap;
+  margin-top: 1rem;
+  padding: 2rem 1rem;
+  display: flex;
+}
+
+.login .loginDetails form {
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+}
+
+.login .loginDetails form .sectionLogin, .login .loginDetails form .sectionPassword {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.login .loginDetails form .sectionLogin input, .login .loginDetails form .sectionPassword input {
+  min-width: 250px;
+  padding: .5rem .3rem;
+}
+
+.login .loginDetails form .sectionLogin label, .login .loginDetails form .sectionPassword label {
+  text-align: center;
+  color: #fff;
+  font-family: Alice, serif;
+  font-size: 1.2rem;
+}
+
+.login .loginDetails form button {
+  max-width: 150px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  letter-spacing: .1rem;
+  background-color: #00576e;
+  border: 1px solid #00576e;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.login .loginDetails form button:hover {
+  color: #c0a36e;
+}
+
+.login .sectionSignin {
+  color: #fff;
+  min-width: 350px;
+  background-color: #c0a36ef5;
+  border: 2px solid #00576e;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.login .sectionSignin p {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.login .sectionSignin .signInButton {
+  max-width: 150px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  letter-spacing: .1rem;
+  background-color: #00576e;
+  border: 1px solid #00576e;
+}
+
+.login .sectionSignin .signInButton:hover {
+  color: #c0a36e;
+}
+
+.registration {
+  color: #fff;
+  flex-flow: column wrap;
+  align-content: center;
+  display: flex;
+}
+
+.registration h2 {
+  text-align: center;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 2px #00576e;
+  margin-bottom: 1rem;
+}
+
+.registration form {
+  background-color: #c0a36ef5;
+  flex-direction: column;
+  padding: 2rem;
+  display: flex;
+}
+
+.registration .sectionLogin, .registration .sectionPassword, .registration .sectionPassword2 {
+  flex-direction: column;
+  display: flex;
+}
+
+.registration .sectionLogin input, .registration .sectionPassword input, .registration .sectionPassword2 input {
+  min-width: 250px;
+  padding: .5rem .3rem;
+}
+
+.registration .sectionLogin label, .registration .sectionPassword label, .registration .sectionPassword2 label {
+  text-align: center;
+  color: #fff;
+  align-self: flex-start;
+  padding-top: .5rem;
+  font-family: Alice, serif;
+  font-size: 1.1rem;
+}
+
+.registration button {
+  max-width: 150px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  letter-spacing: .1rem;
+  background-color: #00576e;
+  border: 1px solid #00576e;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+.registration button:hover {
+  color: #c0a36e;
+}
+
+.userSection {
+  flex-direction: column;
+  flex-basis: 250px;
+  align-items: center;
+  margin: 4rem;
+  display: flex;
+}
+
+.userSection div {
+  background-color: #c0a36ef5;
+  flex-direction: column;
+  padding: 2rem;
+  display: flex;
+}
+
+.userSection h2 {
+  background-color: #c0a36ef5;
+  align-self: center;
+  margin: 0;
+}
+
+.userSection button {
+  max-width: 150px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  letter-spacing: .1rem;
+  background-color: #00576e;
+  border: 1px solid #00576e;
+  align-self: center;
+  margin: 1rem;
+}
+
+.userSection button:hover {
+  color: #c0a36e;
+}
+
+/*# sourceMappingURL=index.css.map */
