@@ -19,6 +19,7 @@ Project is created with:
 * HTML
 * SASS
 * JavaScript
+* JSON Server
 * Parcel
 	
 
