@@ -1,5 +1,5 @@
 export function CartNav() {
-    if (window.innerWidth <= 600) {
+    if (window.innerWidth <= 737) {
         return;
     }
 

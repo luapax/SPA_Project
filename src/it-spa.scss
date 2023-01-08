@@ -399,6 +399,7 @@ section {
     .reservation {
         display: flex;
         flex-direction: column;
+        margin-bottom: 4rem;
 
         .divWrapperDates {
             margin-top: 3rem;
@@ -489,7 +490,6 @@ section {
     position: fixed;
     bottom: 0;
     width: 100%;
-
 }
 
 
