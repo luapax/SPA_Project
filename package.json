@@ -6,7 +6,7 @@
   "scripts": {
     "start:db": "json-server --watch database.json",
     "start:app": "parcel ./index.html --open",
-    "build": "parcel build ./src/it-spa.js"
+    "build": "parcel build ./index.js"
   },
   "keywords": [],
   "author": "",
